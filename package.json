@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "time-hash",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "UTC/GMT Time Hash for milliseconds/timestamps",
   "homepage": "https://github.com/disarticulate/time-hash/",
   "repository": "disarticulate/time-hash",
@@ -11,7 +11,7 @@
     "Abe Usher <http://www.linkedin.com/in/socialnetworkanalysis>"
   ],
   "license": "MIT",
-  "keywords": ['efficient time', 'time hashing', 'timestamps', 'big data'],
+  "keywords": ["efficient time", "time hashing", "timestamps", "big data"],
   "engines": {
       "node": ">=5.0"
   },
