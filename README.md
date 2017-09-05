@@ -66,14 +66,11 @@ Usage
 Other Compatible Implementations
 ---------------
 
--  `python
-   [timehash](https://github.com/abeusher/timehash/blob/master/timehash/__init__.py)`__
+-  python [timehash](https://github.com/abeusher/timehash/blob/master/timehash/__init__.py)
    - a reference implementation in pure python
--  `perl
-   [timehash](https://github.com/abeusher/timehash/blob/master/timehash.pl)`__
+-  perl [timehash](https://github.com/abeusher/timehash/blob/master/timehash.pl)
    - a reference implementation in perl
--  `java
-   [timehash](https://github.com/abeusher/timehash/blob/master/TimeHash.java)`__
+-  java [timehash](https://github.com/abeusher/timehash/blob/master/TimeHash.java)
    - a reference implementation in java
 
 ### License
