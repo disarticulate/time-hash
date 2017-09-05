@@ -27,8 +27,8 @@ def encode(timeseconds, precision=10):
 */
 
 import StaticMap from './static'
+import Decimal from 'decimal.js'
 
-const Decimal = require('decimal.js')
 const { __base32, time_interval, error_reduction } = new StaticMap()
 
 const encode = (timeseconds, precision) => {
@@ -58,7 +58,7 @@ const encode = (timeseconds, precision) => {
     } else {
       timehash.push(__base32[ch])
       bit = 0
-      ch = 0      
+      ch = 0
     }
   }
   return timehash.join('')

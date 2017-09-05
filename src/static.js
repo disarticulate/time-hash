@@ -31,7 +31,7 @@ for i in range(len(__base32)):
 del i
 */
 
-const Decimal = require('decimal.js')
+import Decimal from 'decimal.js'
 
 Decimal.set({ precision: 18, rounding: 4 })
 

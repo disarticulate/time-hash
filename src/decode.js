@@ -28,8 +28,8 @@ def decode(timehash):
 */
 
 import StaticMap from './static'
+import Decimal from 'decimal.js'
 
-const Decimal = require('decimal.js')
 const { __base32, __decodemap, time_interval, error_reduction } = new StaticMap()
 
 const decode_exactly = (timehash) => {
