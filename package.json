@@ -1,18 +1,18 @@
 {
-  "private": true,
-  "name": "babel-starter-kit",
-  "version": "0.0.0",
-  "description": "A project template for authoring and publishing JavaScript libraries",
-  "homepage": "https://www.kriasoft.com/babel-starter-kit/",
-  "repository": "kriasoft/babel-starter-kit",
-  "author": "Kriasoft <hello@kriasoft.com> (https://www.kriasoft.com)",
+  "private": false,
+  "name": "time-hash",
+  "version": "1.0.5",
+  "description": "UTC/GMT Time Hash for milliseconds/timestamps",
+  "homepage": "https://github.com/disarticulate/time-hash/",
+  "repository": "disarticulate/time-hash",
+  "author": "LoreFolk <eric@lorefolk.com> (https://www.lorefolk.com)",
   "contributors": [
-    "Konstantin Tarkus <hello@tarkus.me>",
-    "Vladimir Kutepov <frenzzy.man@gmail.com>"
+    "Eric Xanderson <eric@lorefolk.com",
+    "Abe Usher <http://www.linkedin.com/in/socialnetworkanalysis>"
   ],
   "license": "MIT",
   "keywords": [],
-  "main": "index.js",
+  "main": "dist",
   "jsnext:main": "index.es.js",
   "babel": {
     "presets": [
@@ -28,9 +28,11 @@
     "extends": "airbnb-base"
   },
   "dependencies": {
-    "babel-runtime": "^6.11.6"
+    "babel-runtime": "^6.11.6",
+    "decimal.js": "^7.2.3"
   },
   "devDependencies": {
+    "chai-properties": "^1.2.1",
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.0.0",
@@ -58,7 +60,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "node tools/build",
     "prepublish": "npm run build",
-    "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit",
+    "publish:docs": "easystatic deploy docs --repo disarticulate/time-hash",
     "start": "easystatic start docs"
   }
 }
