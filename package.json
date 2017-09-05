@@ -7,11 +7,14 @@
   "repository": "disarticulate/time-hash",
   "author": "LoreFolk <eric@lorefolk.com> (https://www.lorefolk.com)",
   "contributors": [
-    "Eric Xanderson <eric@lorefolk.com",
+    "Eric Xanderson <eric@lorefolk.com>",
     "Abe Usher <http://www.linkedin.com/in/socialnetworkanalysis>"
   ],
   "license": "MIT",
-  "keywords": [],
+  "keywords": ['efficient time', 'time hashing', 'timestamps', 'big data'],
+  "engines": {
+      "node": ">=5.0"
+  },
   "main": "dist",
   "jsnext:main": "index.es.js",
   "babel": {
