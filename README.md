@@ -19,7 +19,7 @@ Installation
 
 Usage
 -------------
-### Version 0.8 Update
+### Version 1.1.1 Update
 ```
     timehash.encodems(new Date().getTime()) // encodes from milliseconds epoch instead of timeseconds
     timehash.decodems('000000000b') // decodes to milliseconds epoch instead of timeseconds
