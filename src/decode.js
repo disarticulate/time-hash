@@ -64,12 +64,16 @@ const decode_exactly = (timehash) => {
   return [Number(time_value.toPrecision(20)), Number(time_error.toPrecision(20))]
 }
 
+const decodems = (timehash) => {
+  return decode(timehash) * 1000
+}
+
 const decode = (timehash) => {
   /*
     Decode timehash, returning a single floating point value for epoch seconds.
   */
   let [epoch_seconds, time_error] = decode_exactly(timehash)
-  return epoch_seconds
+  return epoch_seconds 
 }
 
-export { decode, decode_exactly }
+export { decode, decodems, decode_exactly }

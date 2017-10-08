@@ -19,6 +19,13 @@ Installation
 
 Usage
 -------------
+### Version 0.8 Update
+```
+    timehash.encodems(new Date().getTime()) // encodes from milliseconds epoch instead of timeseconds
+    timehash.decodems('000000000b') // decodes to milliseconds epoch instead of timeseconds
+
+    > reason: Better compatability with Javascript Date() functions
+```
 ```
     var TimeHash = require('time-hash') // or import TimeHash from 'time-hash'
 

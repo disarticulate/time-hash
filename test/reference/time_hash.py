@@ -191,6 +191,8 @@ if __name__ == "__main__":
     print('quarter_date', quarter_date, encode_from_datetime(quarter_date))
 
 
+    print('afee0dccff', decode('afee0dccff'))
+
     # Examples of encoding
     rightnow = time.time()
     rightnow_hash = encode(rightnow, precision=10)

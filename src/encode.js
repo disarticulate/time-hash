@@ -64,4 +64,9 @@ const encode = (timeseconds, precision) => {
   return timehash.join('')
 }
 
-export { encode }
+const encodems = (milliseconds, precision) => {
+  let timeseconds = milliseconds / 1000
+  return encode(timeseconds, precision)
+}
+
+export { encode, encodems }
