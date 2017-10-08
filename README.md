@@ -25,6 +25,7 @@ Usage
     timehash.decodems('000000000b') // decodes to milliseconds epoch instead of timeseconds
 ```
     > reason: Better compatability with Javascript Date() functions
+### Version 1.0
 
 ```
     var TimeHash = require('time-hash') // or import TimeHash from 'time-hash'
