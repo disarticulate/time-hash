@@ -24,7 +24,7 @@ Usage
     timehash.encodems(new Date().getTime()) // encodes from milliseconds epoch instead of timeseconds
     timehash.decodems('000000000b') // decodes to milliseconds epoch instead of timeseconds
 ```
-    > reason: Better compatability with Javascript Date() functions
+> reason: Better compatability with Javascript Date() functions
 ### Version 1.0
 
 ```
