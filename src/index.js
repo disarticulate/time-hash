@@ -65,7 +65,7 @@ import StaticMap from './static.js'
 import { encode, encodems } from './encode.js'
 import { decode, decodems, decode_exactly } from './decode.js'
 
- class TimeHash {
+class TimeHash {
 
   constructor() {
     this.__staticMap = new StaticMap()
@@ -145,4 +145,4 @@ import { decode, decodems, decode_exactly } from './decode.js'
   }
 }
 
- export default TimeHash
+export default TimeHash

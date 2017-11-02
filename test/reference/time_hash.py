@@ -192,7 +192,7 @@ if __name__ == "__main__":
 
 
     print('afee0dccff', decode('afee0dccff'))
-
+    print('afaadbcd01', decode('afaadbcd01'))
     # Examples of encoding
     rightnow = time.time()
     rightnow_hash = encode(rightnow, precision=10)
