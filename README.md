@@ -19,6 +19,9 @@ Installation
 
 Usage
 -------------
+### Version 1.2.0 Update
+> Improved browser compatability in Rollup
+
 ### Version 1.1.1 Update
 ```
     timehash.encodems(new Date().getTime()) // encodes from milliseconds epoch instead of timeseconds
