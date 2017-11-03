@@ -50,7 +50,7 @@ promise = promise.then(() => del(['dist/*']));
     dest: `dist/${format === 'cjs' ? 'TimeHash' : `TimeHash.${format}`}.js`,
     format,
     sourceMap: true,
-    moduleName: format === 'umd' ? pkg.name : undefined,
+    moduleName: format === 'umd' ? TimeHash : undefined,
   })));
 });
 
