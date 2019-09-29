@@ -20,8 +20,8 @@
   "engines": {
     "node": ">=5.0"
   },
-  "main": "src",
-  "jsnext:main": "dist/TimeHash.es.js",
+  "main": "src/index.js",
+  "jsnext:main": "src/index.js",
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb-base"
@@ -64,7 +64,7 @@
     "test:watch": "mocha --compilers js:babel-register --reporter min --watch",
     "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "build": "npx babel src/index.js --out-file dist/TimeHash.js",
+    "build": "./node_modules/.bin/rollup -c",
     "prepublish": "npm run build",
     "publish:docs": "easystatic deploy docs --repo disarticulate/time-hash",
     "start": "easystatic start docs"
