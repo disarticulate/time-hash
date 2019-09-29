@@ -8,16 +8,16 @@ export default {
   input: 'src/index.js',
   output: [
     {
-      file: `TimeHash.js`,
+      file: `dist/TimeHash.js`,
       format: 'cjs'
     },
     {
-      file: `TimeHash.es.js`,
+      file: `dist/TimeHash.es.js`,
       format: 'esm'
     },
     {
       name: 'TimeHash',
-      file: `TimeHash.umd.js`,
+      file: `dist/TimeHash.umd.js`,
       format: 'umd'
     }
   ],
