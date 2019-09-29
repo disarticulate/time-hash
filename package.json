@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "time-hash",
-  "version": "1.3.1",
+  "version": "2.0.0",
   "description": "UTC/GMT Time Hash for milliseconds/timestamps",
   "homepage": "https://github.com/disarticulate/time-hash/",
   "repository": "disarticulate/time-hash",
