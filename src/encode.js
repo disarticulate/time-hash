@@ -37,6 +37,9 @@ const encode = (timeseconds, precision) => {
     a timehash which will have the character count precision.
     Fixed a nasty logic error in the timehash encode function, credit to LC3.
   */
+  if (timeseconds instanceof Date) {
+    timeseconds = milliseconds.valueOf() / 1000
+  }
   precision = precision || 10 // default
   let interval = time_interval.slice(0)
   let timehash = []
@@ -65,6 +68,9 @@ const encode = (timeseconds, precision) => {
 }
 
 const encodems = (milliseconds, precision) => {
+  if (milliseconds instanceof Date) {
+    milliseconds = milliseconds.valueOf()
+  }
   let timeseconds = milliseconds / 1000
   return encode(timeseconds, precision)
 }

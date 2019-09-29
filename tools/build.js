@@ -26,7 +26,6 @@ promise = promise.then(() => del(['dist/*']));
 ['es', 'cjs', 'umd'].forEach((format) => {
   promise = promise.then(() => rollup.rollup({
     entry: 'src/index.js',
-    external: Object.keys(pkg.dependencies),
     plugins: [
       resolve({
         jsnext: true,
@@ -36,7 +35,7 @@ promise = promise.then(() => del(['dist/*']));
       commonjs({
         include: 'node_modules/**',
         namedExports: {
-          'node_modules/decimal.js/decimal.min.js':'decimal.js'
+          'decimal.js':['Decimal']
         }
       }),
       babel(Object.assign(pkg.babel, {

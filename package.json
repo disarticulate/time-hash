@@ -1,8 +1,7 @@
 {
   "private": false,
   "name": "time-hash",
-  
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "UTC/GMT Time Hash for milliseconds/timestamps",
   "homepage": "https://github.com/disarticulate/time-hash/",
   "repository": "disarticulate/time-hash",
@@ -21,8 +20,8 @@
   "engines": {
     "node": ">=5.0"
   },
-  "main": "dist",
-  "jsnext:main": "index.es.js",
+  "main": "dist/TimeHash.js",
+  "jsnext:main": "dist/TimeHash.es.js",
   "babel": {
     "presets": [
       "latest",
