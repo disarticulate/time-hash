@@ -62,14 +62,13 @@ def encode_from_datetime(datetime_object, precision=10):
     return encode(milliseconds, precision) */
 
 import StaticMap from './static.js'
-import { encode, encodems } from './encode.js'
+import { encodems } from './encode.js'
 import { decode, decodems, decode_exactly } from './decode.js'
 
 class TimeHash {
 
   constructor() {
     this.__staticMap = new StaticMap()
-    this.encode = encode
     this.encodems = encodems
     this.decode = decode
     this.decodems = decodems
@@ -80,8 +79,8 @@ class TimeHash {
     /*
       Extract the hashcode for the preceding time-window.
     */
-    var self = this
-    var { __neighbormap } = self.__staticMap
+    let self = this
+    let { __neighbormap } = self.__staticMap
     let hashcode_array = hashcode.split('')
     let hashcode_reverse = hashcode_array.slice(0).reverse() //calling reverse on existing array does it in place
 
@@ -99,8 +98,8 @@ class TimeHash {
     /*
       Extract the hashcode for the succeeding time-window.
     */
-    var self = this
-    var { __neighbormap } = self.__staticMap
+    let self = this
+    let { __neighbormap } = self.__staticMap
     let hashcode_array = hashcode.split('')
     let hashcode_reverse = hashcode_array.slice(0).reverse() //calling reverse on existing array does it in place
 
@@ -119,7 +118,7 @@ class TimeHash {
       Extract the hashcodes for the preceding and succeeding time-windows,
       excluding the hashcode for the current time-window.
     */
-    var self = this
+    let self = this
     return [self.before(hashcode), self.after(hashcode)]
   }
 
@@ -129,19 +128,17 @@ class TimeHash {
       including the hashcode for the current time-window.
       Clones strings to avoid
     */
-    var self = this
+    let self = this
     return [self.before(hashcode), hashcode, self.after(hashcode)]
   }
 
-  encode_from_datetime (datetime_object, precision) {
+  encode (date, precision = 10) {
     /*
       Converts a Javascript datetime object into a timehash value.
       For alternate ways to do datetime conversions,
       see also: http://stackoverflow.com/questions/6999726/how-can-i-convert-a-datetime-object-to-milliseconds-since-epoch-unix-time-in-p
     */
-    precision = precision || 10
-    let milliseconds = datetime_object.getTime() / 1000
-    return encode(milliseconds, precision)
+    return this.encodems(date, precision)
   }
 }
 
