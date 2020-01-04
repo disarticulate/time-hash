@@ -140,6 +140,10 @@ class TimeHash {
     */
     return this.encodems(date, precision)
   }
+
+  now () {
+    return this.encodems(new Date().valueOf())
+  }
 }
 
 export default TimeHash
