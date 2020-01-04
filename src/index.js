@@ -63,11 +63,15 @@ def encode_from_datetime(datetime_object, precision=10):
 
 import StaticMap from './static.js'
 import { encodems } from './encode.js'
-import { decode, decodems, decode_exactly } from './decode.js'
+import {
+  decode,
+  decodems,
+  decode_exactly
+} from './decode.js'
 
 class TimeHash {
 
-  constructor() {
+  constructor () {
     this.__staticMap = new StaticMap()
     this.encodems = encodems
     this.decode = decode
@@ -141,8 +145,8 @@ class TimeHash {
     return this.encodems(date, precision)
   }
 
-  valid (timehash) {
-    return /^([01abcdef]){1,10}$/i.test(timehash)
+  valid (hashcode) {
+    return /^([01abcdef]){1,10}$/i.test(hashcode)
   }
 
   now () {
