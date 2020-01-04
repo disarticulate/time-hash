@@ -141,6 +141,10 @@ class TimeHash {
     return this.encodems(date, precision)
   }
 
+  valid (timehash) {
+    return /^([01abcdef]){1,10}$/i.test(timehash)
+  }
+
   now () {
     return this.encodems(new Date().valueOf())
   }
