@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "time-hash",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "UTC/GMT Time Hash for milliseconds/timestamps",
   "homepage": "https://github.com/disarticulate/time-hash/",
   "repository": "disarticulate/time-hash",
@@ -27,7 +27,6 @@
     "extends": "airbnb-base"
   },
   "dependencies": {
-    "babel-runtime": "^6.11.6",
     "decimal.js": "^7.2.3"
   },
   "devDependencies": {
@@ -38,6 +37,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.6.2",
     "@babel/register": "^7.6.2",
+    "@babel/runtime": "^7.14.6",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-trace": "^1.1.0",
     "babel-preset-latest": "^6.24.1",
@@ -64,7 +64,7 @@
     "test:watch": "mocha --compilers js:babel-register --reporter min --watch",
     "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "build": "./node_modules/.bin/rollup -c",
+    "build": "rollup -c",
     "prepublish": "npm run build",
     "publish:docs": "easystatic deploy docs --repo disarticulate/time-hash",
     "start": "easystatic start docs"

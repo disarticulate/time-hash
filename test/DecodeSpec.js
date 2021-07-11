@@ -6,11 +6,14 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-var chai = require('chai')
-chai.use(require('chai-properties'))
+import chai from 'chai'
+import chaiProperties from 'chai-properties'
+
 import { expect } from 'chai'
 import StaticMap from '../src/static'
 import { decode, decode_exactly } from '../src/decode'
+
+chai.use(chaiProperties)
 
 const { __base32, time_interval } = new StaticMap()
 
