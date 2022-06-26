@@ -149,8 +149,8 @@ class TimeHash {
     return /^([01abcdef]){1,10}$/i.test(hashcode)
   }
 
-  now () {
-    return this.encodems(new Date().valueOf())
+  now (precision = 10) {
+    return this.encodems(new Date().valueOf(), precision)
   }
 }
 
